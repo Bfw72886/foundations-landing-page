@@ -8,6 +8,9 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header, .content-one, .footer {
@@ -15,8 +18,28 @@ body {
     color: #F9FAF8;
 }
 
+.header {
+    padding: 16px 32px;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 32px;
+}
+
 .header-logo {
     font-size: 24px;
+}
+
+.content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
 }
 
 .content-one-left h1 {
